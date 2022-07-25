@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=League+Spartan:wght@100;400;702;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;702;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Spartan, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: gray;
+    margin: 15px 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-img {
+    background: url("/image/antique-cafe-bg-01.jpg");
+    opacity: 8;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: grayscale(0.40);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: -1%;
+}
+
+.logo {
+    margin-left: 5%;
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo_header {
+    display: flex;
+    margin-left: 2%;
+    align-items: left;
+}
+
+.main_nav {
+    display: flex;
+    width: 50%;
+    margin-right: 2%;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main_nav li a:hover,
+.main_nav li a.active {
+    color: rgb(255, 149, 2);
+}
+
+.main_nav li a.active ::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.main_nav li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.main_nav li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    transition: 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.bg-img h4 {
+    padding-bottom: 15px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.bg-img h2 {
+    color: rgb(245, 238, 238);
+    font-family: 'Cormorant SC', serif;
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0px 0px 0px;
+}
+
+.bg-img button {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(239, 166, 55);
+    height: 40px;
+    font-size: 20px;
+    width: 150px;
+    border: 1px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #000000;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: none;
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contents p {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.contents p:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+
+.contents p:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+
+
+/* .contents p:after {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 40%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 3px solid black;
+} */
+
+@media only screen and (max-width: 992px) {
+    #header {
+        height: 40%;
+        background: white;
+        width: 100%;
+    }
+    .bg-img {
+        border: 1px solid black;
+        display: flex;
+        /* background: url(/image/bg_image.jpg); */
+        width: 100%;
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        filter: grayscale(0.40);
+    }
+    .bg-img h4 {
+        display: none;
+    }
+    .bg-img h2 {
+        display: none;
+    }
+    .bg-img button {
+        display: none;
+    }
+    .navbar {
+        /* background: url(/image/bg_image.jpg); */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        /* height: 100px; */
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 20px;
+        align-items: center;
+        background: #dfa160;
+    }
+    .main_nav {
+        display: none;
+    }
+    .show_nav {
+        padding-top: 2%;
+        display: flex;
+        width: 100vw;
+        /* height: 100vh; */
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .main_nav li {
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        padding: 0%;
+    }
+    .logo_header {
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 2%;
+    }
+    .navbar_toggle {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 30px;
+        color: #000000;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        display: block;
+    }
+}
