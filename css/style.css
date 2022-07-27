@@ -53,7 +53,7 @@ a {
 }
 
 .bg-img {
-    background: url("image/antique-cafe-bg-01.jpg");
+    background: url("/image/antique-cafe-bg-01.jpg");
     opacity: 8;
     height: 90vh;
     width: 100%;
@@ -154,7 +154,7 @@ a {
     background: rgb(255, 255, 255);
     left: 0;
     right: 80;
-    top: 21%;
+    top: 16%;
     position: absolute;
     margin-left: 30%;
 }
@@ -166,7 +166,7 @@ a {
     height: 2px;
     background: rgb(255, 255, 255);
     right: 0;
-    top: 21%;
+    top: 16%;
     position: absolute;
     margin-right: 30%;
 }
